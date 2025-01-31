@@ -21,7 +21,11 @@ public class MessageController {
     }
 
     @GetMapping("/getMessages")
-    public List<Message> getMessages(@RequestParam("receiverId") Long receiverId) {
-        return messageRepository.findByReceiverId(receiverId);
+    public List<Message> getMessages(
+            @RequestParam("user_id") Long userId,
+            @RequestParam("receiver_id") Long receiverId
+    ) {
+        // Fetch messages for the specific conversation
+        return messageRepository.findConversation(userId, receiverId);
     }
 }

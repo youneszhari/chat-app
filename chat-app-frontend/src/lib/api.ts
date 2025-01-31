@@ -4,6 +4,13 @@ const api = axios.create({
   baseURL: 'http://localhost:8082/api', // Laravel backend URL
 });
 
+// Fetch all users except the current user
+export const getUsers = async (userId: number) => {
+    return api.get('/getUsers', {
+      params: { user_id: userId },
+    });
+  };
+
 // Register and login functions (already implemented)
 export const registerUser = async (data: {
   name: string;
@@ -13,6 +20,8 @@ export const registerUser = async (data: {
 }) => {
   return api.post('/register', data);
 };
+
+
 
 export const loginUser = async (data: { username: string; password: string }) => {
   return api.post('/login', data);

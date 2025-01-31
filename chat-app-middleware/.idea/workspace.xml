@@ -5,17 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb722564-be18-441f-9720-096820e094a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/middleware/MiddlewareApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/middleware/MiddlewareResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-frontend/src/context/AuthContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-frontend/src/context/AuthContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-frontend/src/lib/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-frontend/src/lib/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-frontend/src/pages/Chat.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-frontend/src/pages/Chat.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-frontend/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-frontend/src/pages/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-laravel/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-laravel/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/middleware/MiddlewareResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/middleware/MiddlewareResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/chat-app-middleware.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/chat-app-middleware.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-springboot2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-springboot2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-springboot2/src/main/java/com/example/chatapp/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-springboot2/src/main/java/com/example/chatapp/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-springboot2/src/main/java/com/example/chatapp/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-springboot2/src/main/java/com/example/chatapp/MessageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/MessageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/MessageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/MessageRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +37,20 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;youneszhari&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/youneszhari/chat-app.git&quot;,
+    &quot;accountId&quot;: &quot;350aea13-0544-482c-a370-0728718d0fb2&quot;
+  }
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -43,10 +59,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2sH9dgvgqSTDZwq5httU5n2FwlT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -64,6 +80,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/younes-zhari/Desktop/Genie Logiciel/ARCHITECTURE DISTRIBUEE/PROJET/chat-app-middleware",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,6 +89,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -85,9 +103,6 @@
       <option name="catalinaBase" value="" />
       <option name="contextPath" value="/chat-app-middleware" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -97,7 +112,6 @@
         </TomcatInfo>
       </option>
       <option name="vmOptions" value="" />
-      <module name="chat-app-middleware" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,7 +133,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738101738618</updated>
-      <workItem from="1738101745145" duration="8448000" />
+      <workItem from="1738101745145" duration="9376000" />
+      <workItem from="1738322753955" duration="4249000" />
     </task>
     <servers />
   </component>

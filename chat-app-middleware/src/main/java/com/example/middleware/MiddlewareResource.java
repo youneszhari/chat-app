@@ -41,7 +41,10 @@ public class MiddlewareResource {
     @GET
     @Path("/getMessages")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getMessages(@QueryParam("user_id") int userId, @QueryParam("receiver_id") int receiverId) {
+    public Response getMessages(
+            @QueryParam("user_id") int userId,
+            @QueryParam("receiver_id") int receiverId
+    ) {
         try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
             String url = SPRING_BOOT_URL + "/getMessages?user_id=" + userId + "&receiver_id=" + receiverId;
             HttpGet httpGet = new HttpGet(url);

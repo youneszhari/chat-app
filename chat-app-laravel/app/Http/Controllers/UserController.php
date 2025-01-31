@@ -9,9 +9,18 @@ use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
     // Get all users
-    public function getUsers()
+    /* public function getUsers()
     {
         $users = User::all();
+
+        return response()->json($users, 200);
+    } */
+
+    // Get all users except the current user
+    public function getUsers(Request $request)
+    {
+        $currentUserId = $request->query('user_id'); // Get user_id from query parameters
+        $users = User::where('id', '!=', $currentUserId)->get();
 
         return response()->json($users, 200);
     }
@@ -53,4 +62,12 @@ class UserController extends Controller
 
         return response()->json(['message' => 'Login successful', 'user' => $user], 200);
     }
+
+    // Logout a user
+    public function logout(Request $request)
+    {
+        return response()->json(['message' => 'Logout successful'], 200);
+    }
+
+
 }

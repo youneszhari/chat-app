@@ -17,7 +17,7 @@ const Login = () => {
     try {
       const response = await loginUser({ username, password });
       console.log('Login successful:', response);
-      login(); // Update authentication state
+      login({ id: response.data.user.id, username: response.data.user.username }); // Update authentication state
       navigate('/chat'); // Redirect to chat page after successful login
     } catch (error) {
       setError('Invalid username or password');

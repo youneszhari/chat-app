@@ -31,18 +31,18 @@ class MessageController extends Controller
 
     // Retrieve messages
     public function getMessages(Request $request)
-    {
-        $request->validate([
-            'user_id' => 'required|exists:users,id',
-            'receiver_id' => 'required', // Can be a user ID or group ID
-        ]);
+{
+    $request->validate([
+        'user_id' => 'required|exists:users,id',
+        'receiver_id' => 'required|exists:users,id',
+    ]);
 
-        // Forward the request to the middleware
-        $response = Http::get("$this->middlewareUrl/getMessages", [
-            'user_id' => $request->user_id,
-            'receiver_id' => $request->receiver_id,
-        ]);
+    // Forward the request to the middleware
+    $response = Http::get("$this->middlewareUrl/getMessages", [
+        'user_id' => $request->user_id,
+        'receiver_id' => $request->receiver_id,
+    ]);
 
-        return response()->json($response->json(), $response->status());
-    }
+    return response()->json($response->json(), $response->status());
+}
 }

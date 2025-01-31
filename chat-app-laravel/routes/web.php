@@ -9,7 +9,7 @@ use App\Http\Controllers\MessageController;
 // API Routes
 Route::prefix('api')->group(function () {
     // User Management Routes
-    // Route::get('/getUsers', [UserController::class, 'getUsers']);
+    Route::get('/getUsers', [UserController::class, 'getUsers']);
     Route::post('/register', [UserController::class, 'register']);
     Route::post('/login', [UserController::class, 'login']);
 
