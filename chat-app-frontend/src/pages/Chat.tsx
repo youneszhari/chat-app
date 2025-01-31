@@ -23,6 +23,7 @@ const Chat = () => {
   const [newMessage, setNewMessage] = useState('');
   const [receiverId, setReceiverId] = useState<number | null>(null);
   const [users, setUsers] = useState<User[]>([]);
+  const [loading, setLoading] = useState(false);
 
   // Fetch all users when the component mounts
   useEffect(() => {
@@ -39,14 +40,16 @@ const Chat = () => {
   }, [isAuthenticated, receiverId]);
 
   // Fetch messages every 3 seconds
-    useEffect(() => {
-        const interval = setInterval(() => {
+  useEffect(() => {
+    setLoading(true);
+    const interval = setInterval(() => {
         if (isAuthenticated && receiverId) {
             fetchMessages();
         }
-        }, 3000);
-        return () => clearInterval(interval);
-    }, [isAuthenticated, receiverId]);
+        setLoading(false);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [isAuthenticated, receiverId]);
 
   // Fetch all users except the current user
   const fetchUsers = async () => {
@@ -60,11 +63,14 @@ const Chat = () => {
 
   // Fetch messages for the selected conversation
   const fetchMessages = async () => {
+    // setLoading(true);
     try {
       const response = await getMessages(user?.id || 0, receiverId || 0);
       setMessages(response.data);
     } catch (error) {
       console.error('Failed to fetch messages:', error);
+    } finally {
+    //   setLoading(false);
     }
   };
 
@@ -107,20 +113,28 @@ const Chat = () => {
         </select>
       </div>
       <div className="h-96 overflow-y-auto border p-4 rounded-lg mb-4">
-        {messages.map((message, key) => (
-          <div
-            key={key}
-            className={`mb-4 p-3 rounded-lg ${
-              message.sender_id === user?.id ? 'bg-blue-100 ml-auto' : 'bg-gray-100'
-            }`}
-            style={{ maxWidth: '70%' }}
-          >
-            <p className="text-sm text-gray-700">{message.content}</p>
-            <p className="text-xs text-gray-500 mt-1">
-              {new Date(message.timestamp).toLocaleTimeString()}
-            </p>
+        {loading ? (
+          <div className="flex justify-center items-center h-full">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
           </div>
-        ))}
+        ) : messages.length === 0 ? (
+          <p className="text-center text-gray-500">No messages to display.</p>
+        ) : (
+          messages.map((message, key) => (
+            <div
+              key={key}
+              className={`mb-4 p-3 rounded-lg ${
+                message.sender_id === user?.id ? 'bg-blue-100 ml-auto' : 'bg-gray-100'
+              }`}
+              style={{ maxWidth: '70%' }}
+            >
+              <p className="text-sm text-gray-700">{message.content}</p>
+              <p className="text-xs text-gray-500 mt-1">
+                {new Date(message.timestamp).toLocaleTimeString()}
+              </p>
+            </div>
+          ))
+        )}
       </div>
       <div className="flex space-x-2">
         <Input

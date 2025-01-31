@@ -9,11 +9,13 @@ const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { login } = useAuth();
 
   const handleLogin = async () => {
     setError(null); // Clear previous errors
+    setLoading(true);
     try {
       const response = await loginUser({ username, password });
       console.log('Login successful:', response);
@@ -21,6 +23,8 @@ const Login = () => {
       navigate('/chat'); // Redirect to chat page after successful login
     } catch (error) {
       setError('Invalid username or password');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -42,8 +46,8 @@ const Login = () => {
         onChange={(e) => setPassword(e.target.value)}
         className="mb-4"
       />
-      <Button onClick={handleLogin} className="w-full">
-        Login
+      <Button onClick={handleLogin} className="w-full" disabled={loading}>
+        {loading ? 'Logging in...' : 'Login'}
       </Button>
       <p className="mt-4 text-center">
         Don't have an account?{' '}

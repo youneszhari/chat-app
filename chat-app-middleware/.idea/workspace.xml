@@ -5,21 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb722564-be18-441f-9720-096820e094a7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../chat-app-frontend/src/context/AuthContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-frontend/src/context/AuthContext.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-app-frontend/src/lib/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-frontend/src/lib/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chat-app-frontend/src/pages/Chat.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-frontend/src/pages/Chat.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chat-app-frontend/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-frontend/src/pages/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-app-laravel/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-laravel/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-frontend/src/pages/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-frontend/src/pages/Register.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/middleware/MiddlewareResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/middleware/MiddlewareResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/chat-app-middleware.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/chat-app-middleware.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-app-springboot2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-springboot2/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-app-springboot2/src/main/java/com/example/chatapp/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-springboot2/src/main/java/com/example/chatapp/MessageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-app-springboot2/src/main/java/com/example/chatapp/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-springboot2/src/main/java/com/example/chatapp/MessageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/middleware/MiddlewareResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/middleware/MiddlewareResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/ChatAppSpringboot2Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/ChatAppSpringboot2Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/Message.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/MessageController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/MessageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/MessageRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/ServletInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-app-springboot2/target/classes/com/example/chatapp/ServletInitializer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738101738618</updated>
       <workItem from="1738101745145" duration="9376000" />
-      <workItem from="1738322753955" duration="4249000" />
+      <workItem from="1738322753955" duration="4866000" />
     </task>
     <servers />
   </component>

@@ -10,16 +10,20 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleRegister = async () => {
     setError(null); // Clear previous errors
+    setLoading(true);
     try {
       const response = await registerUser({ name, username, email, password });
       console.log('Registration successful:', response);
       navigate('/login'); // Redirect to login page after successful registration
     } catch (error) {
       setError('Registration failed. Please try again.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -55,8 +59,8 @@ const Register = () => {
         onChange={(e) => setPassword(e.target.value)}
         className="mb-4"
       />
-      <Button onClick={handleRegister} className="w-full">
-        Register
+      <Button onClick={handleRegister} className="w-full" disabled={loading}>
+        {loading ? 'Registering...' : 'Register'}
       </Button>
       <p className="mt-4 text-center">
         Already have an account?{' '}
