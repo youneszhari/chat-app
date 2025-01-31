@@ -1,7 +1,3 @@
-Here’s a comprehensive **`README.md`** guide for your project. It includes instructions for setting up and running the **Laravel backend**, **Spring Boot backend**, **Middleware**, and **React frontend**. You can copy and paste this into a `README.md` file in your project repository.
-
----
-
 # **Chat Application**
 
 A full-stack chat application built with **Laravel (PHP)**, **Spring Boot (Java)**, **Middleware (Java)**, and **React.js (TypeScript)**. The app allows users to register, log in, send messages, and view conversations in real-time.
